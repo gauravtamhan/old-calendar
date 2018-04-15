@@ -1,19 +1,6 @@
-var dates = [
-    {
-        'month': 3,
-        'day': 3
-    },
-    {
-        'month': 3,
-        'day': 5
-    }
-];
 
 $(document).ready(function () {
 
-    if (!localStorage.marked) {
-        localStorage.setItem('marked', JSON.stringify(dates));
-    }
     displayCalendar(3, 2018);
     displayCalendar(4, 2018);
     displayCalendar(5, 2018);

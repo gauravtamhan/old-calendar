@@ -1,3 +1,18 @@
+var dates = [
+    {
+        'month': 3,
+        'day': 3
+    },
+    {
+        'month': 3,
+        'day': 5
+    }
+];
+
+if (!localStorage.marked) {
+    localStorage.setItem('marked', JSON.stringify(dates));
+}
+
 const months = ['January', 'February', 'March', 'April',
     'May', 'June', 'July', 'August', 'September',
     'October', 'November', 'December'];

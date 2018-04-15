@@ -7,8 +7,11 @@ const days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const weekdays = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
 const d = new Date();
+var storage = [];
 
-const storage = JSON.parse(localStorage.marked);
+if (localStorage.marked) {
+    storage = JSON.parse(localStorage.marked);
+}
 
 class Calendar {
     constructor(month, year) {

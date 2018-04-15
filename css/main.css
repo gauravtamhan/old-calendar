@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    margin-bottom: 4rem;
+}
+
 .cal {
     margin-top: 2.6rem;
     width: 100%;
@@ -67,10 +71,17 @@ table td span {
 
 .btn-link:hover, .btn-link.focus, .btn-link:focus {
     text-decoration: none;
+    color: #007bff;
+}
+
+.btn-link:hover, .btn-link:active {
+    opacity: 0.5;
 }
 
 .btn {
     margin: .2rem 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
 }
 
 @media (max-width: 375px) {

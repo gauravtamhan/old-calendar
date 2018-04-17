@@ -15,8 +15,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/simple.css">
 
     <title>Calendar</title>
   </head>
@@ -27,7 +28,10 @@
     </div>
 
     <div class="action-bar">
-      <button type="button" id="btn" class="btn btn-link">Add Today's Workout</button>
+      <div class="action-bar-box">
+        <span id="count"></span>
+        <button type="button" id="btn" class="btn btn-link">Mark Today</button>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->

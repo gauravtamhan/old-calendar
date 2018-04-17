@@ -7,10 +7,13 @@ $(document).ready(function () {
     displayCalendar(6, 2018);
     displayCalendar(7, 2018);
 
+    getCount();
+
     $('#btn').click(function() {
         var clicked = $('.active').hasClass("marked");
         if (!clicked) {
             $('.active').addClass("marked");
+            getCount();
             let data = JSON.parse(localStorage.marked);
             data.push({
                 'month': new Date().getMonth(),
@@ -27,4 +30,9 @@ function displayCalendar(m, y) {
     cal.generateHTML();
 
     $('#main').append(cal.getHTML());
+}
+
+function getCount() {
+    var count = $(".marked").length;
+    $("#count").html(count);
 }

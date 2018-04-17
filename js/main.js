@@ -14,7 +14,10 @@ $(document).ready(function () {
         if (!clicked) {
             $('.active').addClass("marked");
             getCount();
-            let data = JSON.parse(localStorage.marked);
+            var data = [];
+            if (localStorage.marked) {
+                data = JSON.parse(localStorage.marked);
+            }
             data.push({
                 'month': new Date().getMonth(),
                 'day': new Date().getDate()
@@ -34,5 +37,12 @@ function displayCalendar(m, y) {
 
 function getCount() {
     var count = $(".marked").length;
-    $("#count").html(count);
+
+    var domElement = $("#count");
+    if (count === 0) {
+        domElement.css('opacity', '0');
+    } else {
+        domElement.html(count);
+        domElement.css('opacity', '1');
+    }
 }

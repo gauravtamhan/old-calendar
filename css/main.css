@@ -1,7 +1,6 @@
 
 body {
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -91,6 +90,7 @@ table td span {
     background-color: rgba(222, 222, 222, 1);
     border-radius: 4px;
     margin-left: 14px;
+    font-weight: 600
 }
 
 .btn-link:hover, .btn-link.focus, .btn-link:focus {
